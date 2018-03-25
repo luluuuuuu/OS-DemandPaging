@@ -14,4 +14,4 @@ Second assignment of the OS course, SSE Tongji. Using demand paging algorithm.
 - 最久未使用(LRU)算法。
 
 ## 主要界面
-![img]()
+![img](https://github.com/luluuuuuu/OS-DemandPaging/blob/master/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/%E6%88%AA%E5%9B%BE.jpeg)
