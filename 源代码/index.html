@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>OS Course Project2 - Memory Management</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+
+    <div class="container">      
+        <header>
+          <h1>内存管理项目二 <small>请求调页模拟</small></h1>
+          <h5>同济大学 软件学院</h5>
+          <h5>15级四班 曹君璐 1552739</h5>
+        </header>
+
+      <main id="main">
+        <div class="algorithm-input">
+          <h3>选择算法</h3>
+          <label for="fifo-ratio1">
+            <input type="radio" name="algorithm" id="FIFORatio" value="FIFO" checked> FIFO
+          </label>
+          <label for="lru-ratio">
+            <input type="radio" name="algorithm" id="LRURatio" value="LRU"> LRU
+          </label>
+        </div><!-- /.algorithm-input -->
+
+        <div class="algorithm-detail">
+          <h4>参数信息</h4>
+          <p>内存块数：<span id="numberOfTotalMemoryBlocks">4</span></p>
+          <p>总指令数：<span id="numberOfTotalInstructions">320</span></p>
+          <p>每页存放指令数：<span id="numberOfInstructionsInEachPage">10</span></p>
+        </div><!-- /algorithm-detail -->
+
+        <div class="algorithm-result">
+          <h4>模拟结果</h4>
+          <p>当前指令：<span id="currentInstruction">NULL</span></p>
+          <p>缺页次数：<span id="numberOfMissingPages">NULL</span></p>
+          <p>缺页率：<span id="pageFaultRate">NULL</span></p>
+        </div>
+
+        <button id="startBtn">开始运行</button>
+
+        <div class="memory-container">
+          <div class="block" id="block0" style="height: 50px;">idle block</div>
+          <div class="block" id="block1" style="height: 50px;">idle block</div>
+          <div class="block" id="block2" style="height: 50px;">idle block</div>
+          <div class="block" id="block3" style="height: 50px;">idle block</div>
+        </div>
+
+        <div class="algorithm-console">
+          <textarea class="console" name="console" id="console" cols="30" rows="29" placeholder="【模拟运行信息】" readonly></textarea>
+        </div>
+
+      </main>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
